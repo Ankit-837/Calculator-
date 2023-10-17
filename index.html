@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="clac.css" />
+    <link rel="stylesheet" href="phn.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>
+        CALCULATOR
+      </h1>
+      <div class="container">
+        <div class="tank">
+          <form action="" name="forms" class="form">
+            <input type="text" name="screen" value="" class="screen" />
+            <div class="buttons-calculator">
+              <div class="first">
+                <input
+                  type="button"
+                  value="C"
+                  onclick="forms.screen.value = '' "
+                  id="buton-C"
+                  class="btn btn-column"
+                />
+                <input
+                  type="button"
+                  value="Del"
+                  onclick="forms.screen.value = forms.screen.value.toString().slice(0,-1) "
+                  id="buton-cross"
+                  class="btn btn-column"
+                />
+                <input
+                  type="button"
+                  value="."
+                  onclick="forms.screen.value +='.'"
+                  id="buton-m"
+                  class="btn btn-column"
+                />
+                <input
+                  type="button"
+                  value=" / "
+                  onclick="forms.screen.value += '/' "
+                  id="buton-div"
+                  class="btn btn-row"
+                />
+              </div>
+              <div class="first">
+                <input
+                  type="button"
+                  value=" 7 "
+                  onclick="forms.screen.value += '7' "
+                  id="buton-seven"
+                  class="btn"
+                />
+                <input
+                  type="button"
+                  value=" 8 "
+                  onclick="forms.screen.value += '8' "
+                  id="buton-eight"
+                  class="btn"
+                />
+                <input
+                  type="button"
+                  value=" 9 "
+                  onclick="forms.screen.value += '9' "
+                  id="buton-nine"
+                  class="btn"
+                />
+                <input
+                  type="button"
+                  value=" * "
+                  onclick="forms.screen.value += '*' "
+                  id="buton-mult"
+                  class="btn btn-row"
+                />
+              </div>
+              <div class="first">
+                <input
+                  type="button"
+                  value=" 4 "
+                  onclick="forms.screen.value += '4' "
+                  id="buton-four"
+                  class="btn"
+                />
+                <input
+                  type="button"
+                  value=" 5 "
+                  onclick="forms.screen.value += '5' "
+                  id="buton-five"
+                  class="btn"
+                />
+  
+                <input
+                  type="button"
+                  value=" 6 "
+                  onclick="forms.screen.value += '6' "
+                  id="buton-six"
+                  class="btn"
+                />
+                <input
+                  type="button"
+                  value=" - "
+                  onclick="forms.screen.value += '-' "
+                  id="buton-sub"
+                  class="btn btn-row"
+                />
+              </div>
+              <div class="first">
+                <input
+                  type="button"
+                  value=" 1 "
+                  onclick="forms.screen.value +='1' "
+                  id="buton"
+                  class="btn"
+                />
+                <input
+                  type="button"
+                  value=" 2 "
+                  onclick="forms.screen.value +='2' "
+                  id="buton-two"
+                  class="btn"
+                />
+                <input
+                  type="button"
+                  value=" 3 "
+                  onclick="forms.screen.value +='3' "
+                  id="buton-thre"
+                  class="btn"
+                />
+                <input
+                  type="button"
+                  value=" + "
+                  onclick="forms.screen.value += '+' "
+                  id="buton-plus"
+                  class="btn btn-row"
+                />
+              </div>
+  
+              <div class="first">
+                <input
+                  type="button"
+                  value=" 0 "
+                  onclick="forms.screen.value += '0' "
+                  id="buton-zero"
+                  class="btn"
+                />
+                <input
+                  type="button"
+                  value="00"
+                  onclick="forms.screen.value += '00' "
+                  id="buton-point"
+                  class="btn"
+                />
+                <input
+                  type="button"
+                  value=" = "
+                  onclick="forms.screen.value = eval(forms.screen.value)"
+                  id="buton-equal"
+                  class="btn btn-row"
+                />
+              </div>
+  
+
+            </div>
+            
+           
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      const deleteButton = document.querySelector("[buton-cross]");
+    </script>
+  </body>
+</html>

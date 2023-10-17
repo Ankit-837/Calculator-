@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+.main h1{
+    color: White;
+    text-align: center;
+    font-size: 3.3rem;
+    animation-name: tim-tim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes tim-tim {
+    0%{
+        color: red;
+        text-shadow: 1px 1px 12px red;
+    }
+    50%{
+        color: yellow;
+        text-shadow: 1px 1px 12px rgb(25, 0, 255);
+
+
+    }
+    75%{
+        color: blue;
+        text-shadow: 1px 1px 12px rgb(0, 255, 0);
+
+    }
+    100%{
+        color: darkorange;
+        text-shadow: 1px 1px 12px rgb(222, 210, 210);
+
+    }
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 90vh;
+    
+}
+.tank{
+    width:80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .form{
+    width:70%;
+    height: 90%;
+    box-shadow: 2px 2px 12px white;
+    padding: 25px 25px;
+    border-radius: 23px;
+ 
+    
+}
+.screen{
+    width: 100%;
+    height: 15%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 3.8rem;
+    text-align: right;
+    /* outline: none;
+    border: none; */
+}
+ .first{
+    /* border: 2px solid rgb(60, 255, 0); */
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.0rem;
+     /* height: 5rem; */
+} 
+.buttons-calculator{
+    /* border: 2px solid red; */
+    height: 85%;
+    
+}
+
+.btn{
+
+    margin-left:2px ;
+    margin-right:2px ;
+    width: 20%;
+    height: 6.2rem;
+    background-color: rgb(84, 82, 82);
+    color: white;
+    border-radius: 160px;    
+    font-size: 2.5rem;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+#buton-zero{
+    width: 50%;
+}
+.btn-row{
+    background-color: darkorange;
+}
+.btn-column{
+    background-color: rgb(182, 161, 161);
+}
+.btn:hover{
+    background-color: rgb(122, 96, 65);
+}
+
